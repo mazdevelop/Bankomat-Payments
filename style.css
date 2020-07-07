@@ -1,0 +1,557 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    /*================= body ================= */
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+    p{
+    color: #c4c4cc;
+    }
+    .wrapper
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 1.5rem;
+    padding-top: 1rem;
+    }
+    /* color */
+    .bg-blue
+    {
+    background-color: rgba(27, 108, 168, 0.3);
+    }
+    .blue
+    {
+    color: rgb(27, 108, 168);
+    }
+    .bg-orange
+    {
+    background-color: rgba(243, 113, 33, 0.3);
+    }
+    .orange
+    {
+    color: rgb(243, 113, 33);
+    }
+    .bg-purple
+    {
+    background-color: rgba(92, 42, 157, 0.3);
+    }
+    .purple
+    {
+    color: rgb(92, 42, 157);
+    }
+    .bg-grey
+    {
+    color: rgba(221, 221, 221,0.4);
+    }
+    .grey
+    {
+    color: rgb(221, 221, 221);
+    }
+    .dark-grey
+    {
+    color: rgb(173, 171, 171);
+    }
+    .bg-green
+    {
+    background-color: rgba(10, 175, 96, 0.7);
+    }
+    .green
+    {
+    color: rgb(10, 175, 96) !important;
+    }
+    .form-flex
+    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    /* =================sidebar-left start ================= */
+    .wrapper .sidebar-left
+    {
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10px;
+    height: 98vh;
+    }
+    .wrapper .sidebar-left .profile-image
+    {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+    }
+    .wrapper .sidebar-left .profile-image p
+    {
+    color: #000;
+    font-weight: 700;
+    font-style: 14px;
+    padding-left: 10px; 
+    }
+    .wrapper .sidebar-left .profile-image p span
+    {
+    display: block;
+    color: #f0ebeb;
+    font-size: 12px;
+    font-weight: 300;
+    }
+    .wrapper .sidebar-left .profile-image img
+    {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    .wrapper .sidebar-left .balance
+    {
+    text-align: left;
+    padding: 2rem 0;
+    }
+    .wrapper .sidebar-left .balance p
+    {
+    font-weight: 700;
+    font-size: 12px;
+    }
+    .wrapper .sidebar-left .balance h3
+    {
+    font-size: 18px;
+    font-weight: 900;
+    }
+    .wrapper .sidebar-left ul
+    {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+    }
+    .wrapper .sidebar-left ul li
+    {
+    font-size: 14px;
+    padding: 10px 0;
+    margin-top: 5px;
+    cursor: pointer;
+    }
+    .wrapper .sidebar-left ul li a
+    {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+    }
+    .wrapper .sidebar-left ul li i
+    {
+    font-size: 12px;
+    padding:  0.5rem 0.5rem 0 0;
+    }
+    .wrapper .sidebar-left ul li a:hover
+    {
+    color:#0aaf60 ;
+    }
+    /* =================sidebar-left end ================= */
+    /* ================= main start ================= */
+    .wrapper .main
+    {
+    padding-top: 1rem;
+    padding:1rem 2rem 0 2rem;
+    flex-basis: 50%;
+    border-right: 0.05px solid #f0ebeb;
+
+    }
+    .wrapper .main .main-top
+    {
+    display: flex;
+    justify-content: space-between;
+    }
+    .wrapper .main .main-top p
+    {
+    font-size: 14px;
+    }
+    .wrapper .main .main-top span
+    {
+    padding: 10px;
+    align-self: center;
+    box-shadow: 0 0.1rem 1rem 0 rgba(38, 48, 54, 0.2);
+    border-radius: 50%;
+    }
+    .wrapper .main .main-top span i
+    {
+    font-size: 22px;
+    }
+    /* form */
+    .wrapper .main .form
+    {
+    padding: 20px 10px;
+    display: flex;
+    }
+    .wrapper .main .form .form-group
+    {
+    padding-top: 10px;
+    margin-right: 10px;
+    position: relative;
+    }
+    .wrapper .main .form .form-group input,
+    .wrapper .main .form .form-group select
+    {
+    border: none;
+    border-bottom: 0.05px solid #f0ebeb;
+    outline: none;
+
+    }
+    .wrapper .main .form .form-group select
+    {
+    color: #f0ebeb;
+    padding: 0 20px;
+    }
+    .wrapper .main .form .form-group input::placeholder,
+    .wrapper .main .form .form-group select
+    {
+    color: #f0ebeb;
+    padding: 0 20px;
+
+    }
+    .wrapper .main .form .form-group i
+    {
+    position: absolute;
+    color: #f0ebeb;
+    font-size: 12px;
+    top: 15px;
+    }
+    .wrapper .main .form button
+    {
+    border: none;
+    border-radius: 8px;
+    background-color: #0aaf60;
+    color: #fff;
+    font-weight: bolder;
+    box-shadow: 0 0.1rem 1rem 0 rgba(38, 48, 54, 0.2);
+    padding: 10px 15px;
+    }
+    /* cards */
+    .wrapper .main .cards 
+    {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .wrapper .main .cards .card
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.1rem 1rem 0 rgba(38, 48, 54, 0.2);
+    padding: 1rem;
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+    border-radius: 20px;
+    }
+    .wrapper .main .cards .card i
+    {
+    margin-top: 5px;
+    color: #0aaf60;
+    }
+    .wrapper .main .cards .card span
+    {
+    display: block;
+    color: #c4c4cc;
+    font-size: 12px;
+    margin-top: 15px;
+    }
+    /* chevron-botton */
+
+    .wrapper .main .chevron-botton
+    {
+    display: grid;
+    place-items: center;
+    margin: 30px 0;
+    padding: 40px;
+    }
+    .wrapper .main .chevron-botton span{
+    padding: 10px;
+    align-self: center;
+    box-shadow: 0 0.1rem 1rem 0 rgba(38, 48, 54, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.6s;
+    }
+    .wrapper .main .chevron-botton span:hover{
+    box-shadow: none ;
+    }
+    /* template */
+    .wrapper .main .templates p
+    {
+    font-size: 14px;
+    padding-top: 5px;
+    }
+    .wrapper .main .templates .template-top
+    {
+    display: flex;
+    justify-content: space-between;
+    }
+    .wrapper .main .templates .template-settng i
+    {
+    font-size: 15px;
+    }
+    .wrapper .main .templates .template-top span
+    {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0aaf60;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 1rem 0 rgba(38, 48, 54, 0.2);
+    }
+    .wrapper .main .templates .template-top span.grey
+    {
+    background-color: #eeeeee ;
+    color: #9e9d9d;
+    }
+    /* lists */
+    .wrapper .main .templates .lists
+    {
+    padding-top: 1rem;
+    }
+    .wrapper .main .templates .lists .list
+    {
+    display: flex;
+    justify-content: center;
+    }
+    .wrapper .main .templates .lists .list tbody
+    {
+    width: 100%;
+    }
+    .wrapper .main .templates .lists .list tr 
+    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2px;
+    }
+    .wrapper .main .templates .lists .list tr td
+    {
+    display: inline-block;
+    padding:  10px;
+    }
+    .wrapper .main .templates .lists .list .list-icon
+    {
+    border-radius: 25%;
+    width: 7%;
+    text-align: center;
+    }
+    .wrapper .main .templates .lists .list .list-title
+    {
+    display: flex;
+    flex-direction: column;
+    }
+    .wrapper .main .templates .lists .list .list-title p
+    {
+    font-weight: bolder;
+    color: #000;
+    }
+    .wrapper .main .templates .lists .list .list-title span
+    {
+    color: #c4c4cc;
+    white-space: nowrap;
+    display: block;
+    font-weight: normal;
+    }
+    .wrapper .main .templates .lists .list .list-details span
+    {
+    display: block;
+    color: #000000;
+    font-size: 14px;
+    }
+    .wrapper .main .templates .lists .list .list-details span:nth-child(2)
+    {
+    color: #c4c4c4;
+    white-space: nowrap;
+    }
+    .wrapper .main .templates .lists .list .list-balnece span
+    {
+    font-weight: bolder;
+    color: #000;
+    }
+    .wrapper .main .templates .lists .list .list-balnece p
+    {
+    font-weight: 400;
+    font-size: 12px;
+    color: #c4c4c4;
+    }
+    /* ================= main end ================= */
+    .wrapper .sidebar-right
+    {
+    flex-basis: 25%;
+    }
+    .wrapper .sidebar-right .right-top
+    {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .wrapper .sidebar-right .right-top button
+    {
+    color: #000;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+    padding:  10px 13px;
+    }
+    /* payment-cards */
+    .wrapper .sidebar-right .payment-cards
+    {
+    padding: 1rem;
+    }
+    .wrapper .sidebar-right .payment-cards .payment-title
+    {
+    display: flex;
+    justify-content: space-between;
+    color: #c4c4c4;
+    font-size: 14px;
+    }
+    .wrapper .sidebar-right .payment-cards .payment-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 0 10px;
+    align-items: center;
+    box-shadow: 0 0.1rem 1rem 0 rgba(38, 48, 54, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    }
+    .wrapper .sidebar-right .payment-cards .payment-card img
+    {
+    height: 50px;
+    width: 80px;
+    object-fit: contain;
+    }
+    .wrapper .sidebar-right .payment-cards .payment-card i{
+    font-size: 13px;
+    }
+    .wrapper .sidebar-right .payment-cards .payment-card .card-info p
+    {
+    font-size: 12px;
+    text-align: right;
+    }
+    .wrapper .sidebar-right .payment-cards .payment-card .card-info h3
+    {
+    font-size: 16px;
+    text-align: right;
+    margin-top: 3px;
+    }
+    /* sidebar-right-form */
+    .wrapper .sidebar-right .sidebar-right-form
+    {
+    margin: 40px 0;
+    padding: 1rem;
+    }
+    .wrapper .sidebar-right .sidebar-right-form h3
+    {
+    margin-bottom: 10px;
+    font-weight: 800;
+    }
+    .wrapper .sidebar-right .sidebar-right-form input
+    {
+    border: none;
+    outline: none;
+    border-bottom: 0.05px solid #f0ebeb;
+    border-radius: 10px;
+    background-color: #ececec;
+    padding: 20px;
+    width: 60%;
+    font-weight: 800;
+    font-size: 18px;
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-wrap
+    {
+    width: 39%;
+    font-size: 10px;
+    border-radius: 10px;
+    background-color: #ececec;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-wrap .default-option
+    {
+        list-style: none;
+        position: relative;
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-wrap .default-option .option
+    {
+        text-align: left;
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-wrap .default-option::before
+    {
+        content: "";
+        position: absolute;
+        top: 3px;
+        right: 0;
+        width: 4px;
+        height: 4px;
+        border: 2px solid;
+        border-color: transparent transparent #adabab #adabab;
+        transform: rotate(-45deg);
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-ul
+    {
+        list-style: none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        padding: 5px 46px 0 0;
+        display: none;
+        background-color: #ececec;
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-wrap .select-ul.active .default-option::before
+    {
+        top: 25px;
+        transform: rotate(-225deg);
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-wrap.active .select-ul
+    {
+        display: block;
+    }
+    .wrapper .sidebar-right .sidebar-right-form .select-ul li
+    {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .wrapper .sidebar-right .sidebar-right-form button
+    {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ececec;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    }
+    /* footer */
+    .wrapper .sidebar-right .footer-btn
+    {
+    display: flex;
+    align-items: center;
+    }
+    .wrapper .sidebar-right .footer-btn button
+    {
+    padding: 13px 30px;
+    margin-top: 20px;
+    margin: 20px 5px 0 5px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+    }

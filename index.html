@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard page with html _css. Future designs. Amazing web designs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".default-option").click(function () {
+                $(this).parent().toggleClass("active");
+            });
+            $(".select-ul li").click(function () {
+                var currentele = $(this).html();
+                $(".default-option li").html(currentele);
+                $(this).parents(".select-wrap").removeClass("active");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="sidebar-left">
+            <div class="flex-start">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1571799235931-3493acc94e6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                        alt="">
+                    <p>Lee Yoon Song!<span>maz develop</span></p>
+                </div>
+
+                <div class="balance">
+                    <p>Balance</p>
+                    <h3>&pound; 234,670</h3>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-exchange-alt"></i>Transition</a></li>
+                    <li><a href="#"><i class="far fa-money-bill-alt"></i>Payments</a></li>
+                    <li><a href="#"><i class="fa fa-credit-card"></i>Cards</a></li>
+                    <li><a href="#"><i class="fa fa-suitcase"></i>Accounts</a></li>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i>Administrations</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="main">
+            <div class="main-top">
+                <div class="flex-start">
+                    <h2>Payments</h2>
+                    <p>Use the search bar to complete your payments</p>
+                </div>
+                <span><i class="far fa-bell"></i></span>
+            </div>
+            <div class="form">
+                <div class="form-group">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="IBAN, accunt number">
+                </div>
+                <div class="form-group">
+                    <select name="" id="">
+                        <option value="1">City Address</option>
+                        <option value="2">City Address</option>
+                        <option value="3">City Address</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="" id="">
+                        <option value="1">Account types</option>
+                        <option value="2">Account types</option>
+                        <option value="3">Account types</option>
+                    </select>
+                </div>
+                <button>Search</button>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transfer</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-globe"></i>
+                    <span>Globe</span>
+                </div>
+                <div class="card">
+                    <i class="far fa-building"></i>
+                    <span>Office</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bolt"></i>
+                    <span>Electricity</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-fire-alt"></i>
+                    <span>Gas</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tint"></i>
+                    <span>Water</span>
+                </div>
+            </div>
+            <div class="chevron-botton">
+                <span><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="templates">
+                <div class="template-top">
+                    <div class="flex-start">
+                        <h2>Templates</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="template-settng">
+                        <a href="#"><span class="grey"><i class="fa fa-cog"></i></span></a>
+                        <a href="#"><span><i class="fa fa-plus"></i></span></a>
+                    </div>
+                </div>
+                <div class="lists">
+                    <table class="list">
+                        <tr>
+                            <td class="list-icon bg-blue"><i class="fas fa-shield-virus blue"></i></td>
+                            <td class="list-title">
+                                <p>Insurance<span>Property coverage</span></p>
+                            </td>
+                            <td class="list-details"><span>27363</span><span>Personal Accunts</span></td>
+                            <td class="list-details"><span>7 Sep,2020</span><span>Last Payments</span></td>
+                            <td class="list-balnece">
+                                <span>-&pound;70.24</span>
+                                <p>Balnece</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-ellipsis-v grey"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list-icon bg-orange"><i class="fas fa-bolt orange"></i></td>
+                            <td class="list-title">
+                                <p>Electricity<span>Utility Payments</span></p>
+                            </td>
+                            <td class="list-details"><span>58049850</span><span>Personal Accunts</span></td>
+                            <td class="list-details"><span>2 Sep,2020</span><span>Last Payments</span></td>
+                            <td class="list-balnece">
+                                <span>&pound;102</span>
+                                <p>Balnece</p>
+                            </td>
+                            <td><span><i class="fas fa-ellipsis-v grey"></i></span></td>
+                        </tr>
+                        <tr>
+                            <td class="list-icon bg-purple"><i class="fas fa-tint purple"></i></td>
+                            <td class="list-title">
+                                <p>Water<span>Utility Payments</span></p>
+                            </td>
+                            <td class="list-details"><span>2020304</span><span>Personal Accunts</span></td>
+                            <td class="list-details"><span>5 Sep,2020</span><span>Last Payments</span></td>
+                            <td class="list-balnece">
+                                <span>-&pound;10.50</span>
+                                <p>Balnece</p>
+                            </td>
+                            <td><span><i class="fas fa-ellipsis-v grey"></i></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="sidebar-right">
+            <div class="right-top">
+                <h2>New Payment</h2>
+                <button class="bg-grey">Clear</button>
+            </div>
+            <div class="payment-cards">
+                <div class="payment-title">
+                    <span>From the card</span>
+                    <span class="green">Change card</span>
+                </div>
+                <div class="payment-card">
+                    <img src="https://i.ya-webdesign.com/images/payment-cards-png-6.png" alt="">
+                    <div class="card-info">
+                        <p>****4903</p>
+                        <h3>&pound;10,540</h3>
+                    </div>
+                    <i class="fa fa-chevron-right dark-grey"></i>
+                </div>
+            </div>
+            <div class="payment-cards">
+                <div class="payment-title">
+                    <span>Recipient's card</span>
+                    <span class="green">Change card</span>
+                </div>
+                <div class="payment-card">
+                    <img src="https://cdn1.iconfinder.com/data/icons/web-and-design-vol-1/1000/02-512.png" alt="">
+                    <div class="card-info">
+                        <p>Spider foundry</p>
+                        <h3>**** 3453</h3>
+                    </div>
+                    <i class="fa fa-chevron-right dark-grey"></i>
+                </div>
+            </div>
+            <div class="sidebar-right-form">
+                <h3>Amount</h3>
+                <div class="form-flex">
+                    <input type="text">
+                    <div class="select-wrap">
+                        <ul class="default-option">
+                            <li>
+                                <div class="option">
+                                    <p>Currency</p>
+                                    <span>GBP</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="select-ul">
+                            <li>
+                                <div class="option">
+                                    <span>IRN</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="option">
+                                    <span>USA</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button>Add Comment</button>
+            </div>
+            <div class="footer-btn">
+                <button class="bg-green">Transfer</button>
+                <button class="green">Save as template</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
