@@ -1,5 +1,5 @@
 # Bankomat-Payments
-Dashboard page with html and css &amp; jquery. Future designs<br>
+Dashboard page with html and css &amp; jquery<br>
 Implement a plan of
 [dribbble.com](https://dribbble.com/shots/11578712/attachments/3199623?mode=media)<br>
 Demo:
